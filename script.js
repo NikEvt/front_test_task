@@ -7,11 +7,10 @@ $(document).ready(function() {
         theme: "monokai",
         autoCloseTags: true,
         matchBrackets: true,
-        extraKeys: {
-            "Ctrl-Space": "autocomplete"
-        }
     });
 
+    editor.setSize('100%', '90vh');
+ 
     editor.on('change', function() {
         var htmlCode = editor.getValue();
         $('#htmlOutput').html(htmlCode);
