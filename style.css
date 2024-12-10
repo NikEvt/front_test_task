@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300&family=Oswald:wght@200..700&display=swap');
+
+
+h3 {
+        font-family: "Oswald", sans-serif;
+    }
+
+.block {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1024px) {
+    .block_editor,
+    .block_viewer {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    #htmlEditor, 
+    #htmlOutput {
+        min-height: 50vh; 
+    }
+}
+
+@media (max-width: 956px) {
+    .block_editor,
+    .block_viewer {
+        flex: 0 0 100%; 
+        max-width: 100%;
+    }
+
+    #htmlEditor,
+    #htmlOutput {
+        min-height: 40vh;  
+    }
+}
+
+@media (max-width: 768px) {
+    .block_editor,
+    .block_viewer {
+        flex: 0 0 100%; 
+        max-width: 100%;
+    }
+
+    #htmlEditor,
+    #htmlOutput {
+        min-height: 40vh;  
+    }
+}
+
+@media (max-width: 375px) {
+    #htmlEditor,
+    #htmlOutput {
+        min-height: 30vh;  
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+}
